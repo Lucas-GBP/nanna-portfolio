@@ -12,10 +12,12 @@ on:
       - develop
 
 jobs:
-  checks:
+  lint:
+    name: ESLint
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
         with:
           node-version: "24.18.1"
@@ -23,8 +25,20 @@ jobs:
 
       - run: npm ci
 
-      - name: Lint
-        run: npm run lint
+      - run: npm run lint
 
-      - name: Typecheck
-        run: npm run typecheck
+  typecheck:
+    name: TypeScript
+    runs-on: ubuntu-latest
+    needs: lint
+
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24.18.1"
+          cache: "npm"
+
+      - run: npm ci
+
+      - run: npm run typecheck
