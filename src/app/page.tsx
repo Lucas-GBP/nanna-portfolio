@@ -1,15 +1,10 @@
 import styles from "./page.module.scss";
-import {useTranslations} from 'next-intl';
+import Home from "@/layout/home";
 
-export default function Home() {
-    const t = useTranslations('home');
-
+export default function Main() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <h1>{t('title')}</h1>
-        <div>{t('about')}</div>
+      <main className={styles.page}>
+        <Home/>
       </main>
-    </div>
   );
 }

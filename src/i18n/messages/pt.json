@@ -1,0 +1,28 @@
+{
+  "home": {
+    "title": "Olá, eu sou Nanna",
+    "subtitle": "Bem vindo ao meu portifólio",
+    "about": {
+        "p1": "sdgiohosdhgiohsgoihsg sdgkjsdokhgoskdhgohsgohdogho sdgndsgndksgpsdpdg",
+        "p2": "dsngodsngbsdgbdgsbd dsghiohosdhgihgk"
+    }
+  },
+  "process": {
+    "sketch": "SKETCH/LINE",
+    "basic": "BASIC RENDER",
+    "full": "FULL RENDER"
+  },
+  "prices": {
+    "title": "PREÇOS",
+    "description": {
+        "p1": "sdgiohosdhgiohsgoihsg sdgkjsdokhgoskdhgohsgohdogho sdgndsgndksgpsdpdg",
+        "p2": "dsngodsngbsdgbdgsbd dsghiohosdhgihgk"
+    }
+  },
+  "thanks": {
+    "declaration": "OBRIGADA"
+  },
+  "ui": {
+    "back": "VOLTAR"
+  }
+}

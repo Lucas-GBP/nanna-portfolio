@@ -1,0 +1,24 @@
+$card-background: #fff;
+$title-color: purple;
+$text-color: #000;
+$card-padding: 3em;
+$card-border-radius: 1em;
+
+.main {
+  margin: auto;
+  max-width: 100vw;
+  padding: $card-padding;
+  border-radius: $card-border-radius;
+  background-color: $card-background;
+}
+
+.text {
+  h1 {
+    color: $title-color;
+  }
+
+  h2,
+  p {
+    color: $text-color;
+  }
+}

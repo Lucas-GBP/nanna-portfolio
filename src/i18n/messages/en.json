@@ -1,0 +1,28 @@
+{
+  "home": {
+    "title": "Hi, I'm Nanna",
+    "subtitle": "Welcome to my portfolio",
+    "about": {
+        "p1": "sdgiohosdhgiohsgoihsg sdgkjsdokhgoskdhgohsgohdogho sdgndsgndksgpsdpdg",
+        "p2": "dsngodsngbsdgbdgsbd dsghiohosdhgihgk"
+    }
+  },
+  "process": {
+    "sketch": "SKETCH/LINE",
+    "basic": "BASIC RENDER",
+    "full": "FULL RENDER"
+  },
+  "prices": {
+    "title": "PRICES",
+    "description": {
+        "p1": "sdgiohosdhgiohsgoihsg sdgkjsdokhgoskdhgohsgohdogho sdgndsgndksgpsdpdg",
+        "p2": "dsngodsngbsdgbdgsbd dsghiohosdhgihgk"
+    }
+  },
+  "thanks": {
+    "declaration": "THANKS"
+  },
+  "ui": {
+    "back": "BACK"
+  }
+}
