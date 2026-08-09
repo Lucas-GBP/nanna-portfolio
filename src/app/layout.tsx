@@ -1,17 +1,32 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import {NextIntlClientProvider} from "next-intl";
 import {getLocale} from "next-intl/server";
 import "./globals.scss";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const montserrat = localFont({
+  src: [
+    {
+      path: "../fonts/Montserrat/Montserrat-VariableFont_wght.ttf",
+      style: "normal",
+      weight: "100 900",
+    },
+    {
+      path: "../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf",
+      style: "italic",
+      weight: "100 900",
+    },
+  ],
+  variable: "--font-montserrat",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const bebasNeue = localFont({
+  src: "../fonts/Bebas_Neue/BebasNeue-Regular.ttf",
+  variable: "--font-bebas-neue",
+  display: "swap",
+  style: "normal",
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +40,7 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang={locale}
-      className={`${geistSans.variable} ${geistMono.variable}`}
+      className={`${montserrat.variable} ${bebasNeue.variable}`}
     >
       <body>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>

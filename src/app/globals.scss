@@ -1,3 +1,6 @@
+@use "../style/fonts" as fonts;
+@use "../style/colors.scss" as colors;
+
 $background-light: #fff;
 $background-dark: #0a0a0a;
 $foreground-light: #171717;
@@ -21,16 +24,20 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  color: $foreground-light;
-  background: $background-light;
-  font-family: Arial, Helvetica, sans-serif;
+  color: colors.$gray-dark;
+  background: white;
+  font-family: fonts.$font-montserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color: $foreground-dark;
-    background: $background-dark;
-  }
+h1 {
+    font-family: fonts.$font-bebas-neue;
+    color: colors.$purple;
+}
+
+p {
+    size: 17pt;
 }
 
 * {
