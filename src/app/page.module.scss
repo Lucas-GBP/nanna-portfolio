@@ -9,7 +9,7 @@ $background-dark: #000;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: fonts.$font-montserrat;
+  font-family: fonts.$montserrat;
   background-color: $background-light;
 
   @media (prefers-color-scheme: dark) {

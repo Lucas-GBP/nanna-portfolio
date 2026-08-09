@@ -26,13 +26,13 @@ body {
   flex-direction: column;
   color: colors.$gray-dark;
   background: white;
-  font-family: fonts.$font-montserrat;
+  font-family: fonts.$montserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-    font-family: fonts.$font-bebas-neue;
+    font-family: fonts.$bebas-neue;
     color: colors.$purple;
 }
 
